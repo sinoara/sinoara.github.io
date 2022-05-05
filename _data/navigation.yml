@@ -1,0 +1,9 @@
+- name: Sobre
+  link: "#about"
+  icon: fas fa-info
+- name: Currículo
+  link: https://drive.google.com/file/d/1xelAironBjxO4wdgCLHJPND28r1kXMMk/view
+  icon: fas fa-file-download
+- name: Projetos
+  link: "#projects"
+  icon: fas fa-th-list

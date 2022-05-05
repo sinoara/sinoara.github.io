@@ -12,25 +12,14 @@
 
 	<div id="navbarExampleTransparentExample" class="navbar-menu">
 		<div class="navbar-end">
-			<a class="navbar-item" href="#about">
+			{% for item in site.data.navigation %}
+			<a class="navbar-item" href="{{ item.link }}">
 				<span class="icon">
-					<i class="fas fa-info"></i>
+					<i class="{{ item.icon }}"></i>
 				</span>
-				<span>Sobre</span>
+				<span>{{ item.name }}</span>
 			</a>
-			<a class="navbar-item" href="https://drive.google.com/file/d/1xelAironBjxO4wdgCLHJPND28r1kXMMk/view">
-				<span class="icon">
-					<i class="fas fa-file-download"></i>
-				</span>
-				<span>Currículo</span>
-			</a>
-			<a class="navbar-item" href="#projects">
-				<span class="icon">
-					<i class="fas fa-th-list"></i>
-				</span>
-				<span>Projetos</span>
-			</a>
-
+			{% endfor %}
 		</div>
 	</div>
 </nav>
