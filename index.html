@@ -108,6 +108,7 @@ title: Guilherme Sinoara
 	</div>
 
 	<!-- XP5 -->
+	{% for project in site.data.projects %}
 	<section class="hero is-white">
 		<div class="hero-body">
 			<div class="container">
@@ -119,9 +120,9 @@ title: Guilherme Sinoara
 												 is-4-widescreen is-offset-1-widescreen
 												 is-4-fullhd is-offset-1-fullhd">
 						<figure class="image">
-							<img src="../img/xp5-1.jpg">
+							<img src="../img/{{ project.image }}">
 							<figcaption style="text-align: center;">
-								XP5
+								{{ project.caption }}
 							</figcaption>
 						</figure>
 					</div>
@@ -131,167 +132,19 @@ title: Guilherme Sinoara
 												 is-5-desktop is-offset-1-desktop
 												 is-5-widescreen is-offset-1-widescreen
 												 is-5-fullhd is-offset-1-fullhd">
-						<h1 class="titled title is-1 mb-6"> XP5 </h1>
-						<h2 class="subtitle is-3">Elemental Future GmbH</h2>
+						<h1 class="titled title is-1 mb-6"> {{ project.title }} </h1>
+						<h2 class="subtitle is-3"> {{ project.company }} </h2>
 						<h3 class="subtitled subtitle">
-							VANT VTOL mais leve que o ar com capacidade de voo manual, com
-							estabilidade aumentada ou autônomo.
+							{{ project.subtitle }}
 						</h3>
-						<a href="/projetos/xp5" class="button is-large is-fullwidth is-link">
+						<a href="{{ project.link }}" class="button is-large is-fullwidth is-link">
 								Leia mais
 						</a>
 					</div>
-
 				</div>
 			</div>
 		</div>
 	</section>
-
-	<!-- Aeróstato -->
-	<section class="hero is-white">
-		<div class="hero-body">
-			<div class="container">
-				<div class="columns  is-vcentered">
-					<div data-aos="fade-left" class="column
-												 is-10-mobile is-offset-1-mobile
-												 is-10-tablet is-offset-1-tablet
-												 is-4-desktop is-offset-1-desktop
-												 is-4-widescreen is-offset-1-widescreen
-												 is-4-fullhd is-offset-1-fullhd">
-						<figure class="image">
-							<img src="../img/xp5-1.jpg">
-							<figcaption style="text-align: center;">
-								Aeróstato
-							</figcaption>
-						</figure>
-					</div>
-					<div data-aos="fade-down" class="column
-												 is-10-mobile is-offset-1-mobile
-												 is-10-tablet is-offset-1-tablet
-												 is-5-desktop is-offset-1-desktop
-												 is-5-widescreen is-offset-1-widescreen
-												 is-5-fullhd is-offset-1-fullhd">
-						<h1 class="titled title is-1 mb-6">Aeróstato</h1>
-						<h2 class="subtitle is-3">Elemental Future GmbH</h2>
-						<h3 class="subtitled subtitle">
-							Balão cativo experimental com controle ativo, câmera de
-							vigilância  e telemetria por wi-fi.
-						</h3>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-
-	<!-- ADB-3-3 -->
-	<section class="hero is-white">
-		<div class="hero-body">
-			<div class="container">
-				<div class="columns  is-vcentered">
-					<div data-aos="fade-left" class="column
-												 is-10-mobile is-offset-1-mobile
-												 is-10-tablet is-offset-1-tablet
-												 is-4-desktop is-offset-1-desktop
-												 is-4-widescreen is-offset-1-widescreen
-												 is-4-fullhd is-offset-1-fullhd">
-						<figure class="image">
-							<img src="../img/adb-3-3.jpg">
-							<figcaption style="text-align: center;">
-								ADB-3-3
-							</figcaption>
-						</figure>
-					</div>
-					<div data-aos="fade-down" class="column
-												 is-10-mobile is-offset-1-mobile
-												 is-10-tablet is-offset-1-tablet
-												 is-5-desktop is-offset-1-desktop
-												 is-5-widescreen is-offset-1-widescreen
-												 is-5-fullhd is-offset-1-fullhd">
-						<h1 class="titled title is-1 mb-6">
-							ADB-3-3
-						</h1>
-						<h2 class="subtitle is-3">Airship do Brasil</h2>
-						<h3 class="subtitled subtitle">
-							Dirigível para até 5 passageiros.
-						</h3>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-
-	<!-- ADB-3-X01 -->
-	<section class="hero is-white">
-		<div class="hero-body">
-			<div class="container">
-				<div class="columns  is-vcentered">
-					<div data-aos="fade-left" class="column
-												 is-10-mobile is-offset-1-mobile
-												 is-10-tablet is-offset-1-tablet
-												 is-4-desktop is-offset-1-desktop
-												 is-4-widescreen is-offset-1-widescreen
-												 is-4-fullhd is-offset-1-fullhd">
-						<figure class="image">
-							<img src="../img/adb-3-x01.jpg">
-							<figcaption style="text-align: center;">
-								ADB-3-X01 em voo. Foto por <a href="https://www.flickr.com/photos/caiafaimage/35389458343" class="has-text-link">Roberto Caiafa.</a>
-								Licenciada sob <a href="https://creativecommons.org/licenses/by/2.0/" class="has-text-link">CC BY 2.0</a>.
-							</figcaption>
-						</figure>
-					</div>
-					<div data-aos="fade-down" class="column
-												 is-10-mobile is-offset-1-mobile
-												 is-10-tablet is-offset-1-tablet
-												 is-5-desktop is-offset-1-desktop
-												 is-5-widescreen is-offset-1-widescreen
-												 is-5-fullhd is-offset-1-fullhd">
-						<h1 class="titled title is-1 mb-6">
-							ADB-3-X01
-						</h1>
-						<h2 class="subtitle is-3">Airship do Brasil</h2>
-						<h3 class="subtitled subtitle">
-							Dirigível experimental para até 5 passageiros baseado no ADB-3-3.
-						</h3>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-
-	<!-- ADB-3-30 -->
-	<section class="hero is-white">
-		<div class="hero-body">
-			<div class="container">
-				<div class="columns  is-vcentered">
-					<div data-aos="fade-left" class="column
-												 is-10-mobile is-offset-1-mobile
-												 is-10-tablet is-offset-1-tablet
-												 is-4-desktop is-offset-1-desktop
-												 is-4-widescreen is-offset-1-widescreen
-												 is-4-fullhd is-offset-1-fullhd">
-						<figure class="image">
-							<img src="../img/adb-3-30.jpg">
-							<figcaption style="text-align: center;">
-								ADB-3-30 (Imagem: Divulgação Airship)
-							</figcaption>
-						</figure>
-					</div>
-					<div data-aos="fade-down" class="column
-												 is-10-mobile is-offset-1-mobile
-												 is-10-tablet is-offset-1-tablet
-												 is-5-desktop is-offset-1-desktop
-												 is-5-widescreen is-offset-1-widescreen
-												 is-5-fullhd is-offset-1-fullhd">
-						<h1 class="titled title is-1 mb-6">
-							Airship do Brasil - ADB-3-30
-						</h1>
-						<h2 class="subtitled subtitle">
-							Dirigível de carga para até 30 toneladas.
-						</h2>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
+	{% endfor %}
 
 </section>

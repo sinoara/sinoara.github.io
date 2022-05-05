@@ -1,0 +1,38 @@
+- title: XP5
+  image: xp5-1.jpg
+  caption: XP5
+  company: Elemental Future GmbH
+  subtitle: >
+    VANT VTOL mais leve que o ar com capacidade de voo manual, com estabilidade
+    aumentada ou autônomo.
+  link: /projetos/xp5
+- title: Aeróstato
+  image: xp5-1.jpg
+  caption: Aeróstato
+  company: Elemental Future GmbH
+  subtitle: >
+    Balão cativo experimental com controle ativo, câmera de
+    vigilância  e telemetria por wi-fi.
+  link: /projetos/aerostato-elemental
+- title: ADB-3-3
+  image: adb-3-3.jpg
+  caption: ADB-3-3
+  company: Airship do Brasil
+  subtitle: >
+    Dirigível para até 5 passageiros.
+  link: /projetos/adb-3-3
+- title: ADB-3-X01
+  image: adb-3-x01.jpg
+  caption: >
+    ADB-3-X01 em voo. Foto por <a href="https://www.flickr.com/photos/caiafaimage/35389458343" class="has-text-link">Roberto Caiafa.</a>
+    Licenciada sob <a href="https://creativecommons.org/licenses/by/2.0/" class="has-text-link">CC BY 2.0</a>.
+  company: Airship do Brasil
+  subtitle: >
+    Dirigível experimental para até 5 passageiros baseado no ADB-3-3.
+  link: /projetos/adb-3-X01
+- title: ADB-3-30
+  image: adb-3-30.jpg
+  caption: "ADB-3-30 (Imagem: Divulgação Airship)"
+  company: Airship do Brasil
+  subtitle: Dirigível de carga para até 30 toneladas.
+  link: /projetos/adb-3-30
