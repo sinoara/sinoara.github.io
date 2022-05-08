@@ -2,6 +2,14 @@
 layout: project
 title: Guilherme Sinoara > XP5
 project: XP5
+images:
+- path: img/xp5_fields.png
+  caption: Visualização em 3D usando FlightGear
+- path: img/qgroundcontrol.jpg
+  caption: Teste do sistema de controle em simulação
+items:
+ - Implementação da mecânica de voo em JSBSim
+ - Simulação SITL para guiar projeto e calibração do sistema de controle
 ---
 <section class="hero is-link is-medium">
 	<div class="hero-body">
@@ -9,7 +17,7 @@ project: XP5
 			XP5
 		</p>
 		<p class="subtitle">
-			VANT VTOL
+			VANT VTOL mais leve que o ar
 		</p>
 	</div>
 </section>
@@ -20,48 +28,37 @@ project: XP5
 			Simulação
 		</h1>
 		<div class="container">
-			<p>Implementação de SITL da aeronave utilizando Ardupilot e JSBSim</p>
+			<p>Implementação de SITL da aeronave utilizando Ardupilot, JSBSim e FlightGear</p>
 		</div>
 	</div>
 
-	<div class="columns has-same-height is-gapless">
-		<div class="column">
+	<div class="columns is-multiline">
+		{% for image in page.images %}
+		<div class="column is-one-quarter-desktop is-half-tablet">
 			<div class="card">
 				<div class="card-image">
-					<figure class="image">
-						<img src="img/xp5_fields.png" alt="XP5 flying over fields.">
+					<figure class="image is-3by2">
+						<img style="object-fit:scale-down;" src={{ image.path }} alt="">
 					</figure>
+					<div class="card-content is-overlay is-clipped">
+						<span class="tag is-info"> {{ image.caption }} </span>
+					</div>
 				</div>
+				<footer class="card-footer">
+				</footer>
 			</div>
 		</div>
-
-		<div class="column">
-			<div class="card">
-				<div class="content">
-					<p>Implementação da mecânica de voo em JSBSim</p>
-				</div>
-			</div>
-		</div>
+		{% endfor %}
 	</div>
 
-	<div class="columns has-same-height is-gapless">
-		<div class="column">
-			<div class="card">
-				<div class="card-image">
-					<figure class="image">
-						<img src="img/qgroundcontrol.jpg" alt="XP5 flying over fields.">
-					</figure>
-				</div>
-			</div>
-		</div>
-
-		<div class="column">
-			<div class="card">
-				<div class="content">
-					<p>Simulação SITL para guiar projeto e calibração do sistema de controle</p>
-				</div>
-			</div>
-		</div>
+	<div class="content">
+		<ul>
+			{% for item in page.items %}
+			<li>{{ item }}</li>
+			{% endfor %}
+		</ul>
 	</div>
+</section>
 
+<section>
 </section>
