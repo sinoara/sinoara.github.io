@@ -7,20 +7,20 @@
     aumentada ou autônomo.
   link: /xp5
 - title: Aeróstato
-  image: xp5-1.jpg
+  image: aerostat.jpg
   caption: Aeróstato
   company: Elemental Future GmbH
   subtitle: >
     Balão cativo experimental com controle ativo, câmera de
     vigilância  e telemetria por wi-fi.
-  link: /projetos/aerostato-elemental
+  link: /aerostat
 - title: ADB-3-3
   image: adb-3-3.jpg
   caption: ADB-3-3
   company: Airship do Brasil
   subtitle: >
     Dirigível para até 5 passageiros.
-  link: /projetos/adb-3-3
+  link: /adb-3-3
 - title: ADB-3-X01
   image: adb-3-x01.jpg
   caption: >
