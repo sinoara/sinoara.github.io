@@ -2,38 +2,69 @@
 layout: project
 title: Guilherme Sinoara > XP5
 project: XP5
-images:
-- path: img/xp5_fields.png
-  caption: Visualização em 3D usando FlightGear
-- path: img/qgroundcontrol.jpg
-  caption: Teste do sistema de controle em simulação
-items:
- - Implementação da mecânica de voo em JSBSim
- - Simulação SITL para guiar projeto e calibração do sistema de controle
+subtitle: VANT VTOL mais leve que o ar
+sections:
+ -
+  title: Simulação
+  subtitle: Implementação de SITL da aeronave utilizando Ardupilot, JSBSim e FlightGear
+  images:
+  - path: img/xp5_fields.png
+    caption: Visualização em 3D usando FlightGear
+  - path: img/qgroundcontrol.jpg
+    caption: Teste do sistema de controle em simulação
+  items:
+   - Implementação da mecânica de voo em JSBSim;
+   - Simulação SITL para guiar projeto e calibração do sistema de controle.
+ -
+  title: Sistema de controle e voo autônomo
+  subtitle: Projeto e integração de um sistema de controle baseado em Ardupilot
+  images:
+  - path: img/cubeorange.jpg
+    caption: Visualização em 3D usando FlightGear
+  items:
+   - Sistema de controle baseado em Ardupilot;
+ -
+  title: Software para bancada de teste de motor
+  subtitle: Software embarcado e de acompanhamento para bancada de teste de motores
+  items:
+   - Software embarcado para aquisição de dados e controle de motores elétricos durante teste;
+   - Software para monitoramento e registro dos dados do teste para análise posterior.
+ -
+  title: Sistema fly-by-wire
+  subtitle: Projeto e implementação de um sistema fly-by-wire 
+  images:
+  - path: img/flybywire.jpg
+    caption: Visualização em 3D usando FlightGear
+  items:
+   - Sistema baseado em Arduino;
+   - Limitador de ângulo/throttle;
+   - Adiciona uma camada de redundância em caso de falha.
 ---
 <section class="hero is-link is-medium">
 	<div class="hero-body">
 		<p class="title">
-			XP5
+		{{ page.project }}
 		</p>
 		<p class="subtitle">
-			VANT VTOL mais leve que o ar
+		{{ page.subtitle }}
 		</p>
 	</div>
 </section>
 
+{% for section in page.sections %}
 <section>
 	<div class="section-heading">
 		<h1 class="title is-3">
-			Simulação
+			<p> {{ section.title }} </p>
 		</h1>
 		<div class="container">
-			<p>Implementação de SITL da aeronave utilizando Ardupilot, JSBSim e FlightGear</p>
+			<p> {{ section.subtitle }} </p>
 		</div>
 	</div>
 
-	<div class="columns is-multiline">
-		{% for image in page.images %}
+	{% if section.images %}
+	<div class="columns is-multiline is-centered">
+		{% for image in section.images %}
 		<div class="column is-one-quarter-desktop is-half-tablet">
 			<div class="card">
 				<div class="card-image">
@@ -50,15 +81,18 @@ items:
 		</div>
 		{% endfor %}
 	</div>
+	{% endif %}
 
-	<div class="content">
-		<ul>
-			{% for item in page.items %}
-			<li>{{ item }}</li>
-			{% endfor %}
-		</ul>
+	<div class="columns is-centered">
+		<div class="column is-half">
+			<div class="content">
+				<ul>
+					{% for item in section.items %}
+					<li>{{ item }}</li>
+					{% endfor %}
+				</ul>
+			</div>
+		</div>
 	</div>
 </section>
-
-<section>
-</section>
+{% endfor %}
