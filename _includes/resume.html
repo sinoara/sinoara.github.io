@@ -2,58 +2,41 @@
 	<div class="section-heading">
 		<div class="columns is-centered">
 			<div class="column is-half">
-			<h3 class="title is-2">Experiência profissional</h3>
-				<div class="timeline">
-					<div class="timeline-item">
-						<div class="timeline-marker is-icon">
-							<i class="fa fa-flag"></i>
-						</div>
-						<div class="timeline-content">
-							<p class="heading">Novembro 2020</p>
-							<p>Control Systems Architect - Elemental Future GmbH</p>
-						</div>
-					</div>
-					<!-- 2020 -->
-					<header class="timeline-header">
-						<span class="tag is-medium is-link">2020</span>
+				<h3 class="title is-2">Experiência profissional</h3>
+				{% for item in site.data.resume %}
+				<div class="card">
+					<header class="card-header">
+						<p class="card-header-title title">
+							{{ item.company }}
+						</p>
 					</header>
-					<!-- Engenheiro -->
-					<div class="timeline-item">
-						<div class="timeline-marker is-icon">
-							<i class="fa fa-flag"></i>
+					<div class="card-content">
+						{% for position in item.positions %}
+						<div class="content has-text-justified">
+							<div class="columns">
+								<div class="column">
+									<p class="subtitle">{{ position.name }}</p>
+								</div>
+								<div class="column">
+									<p class="subtitle has-text-right">{{ position.period }}</p>
+								</div>
+								<hr />
+							</div>
+							<ul>
+								{% for desc in position.description %}
+									<li>{{ desc.title }}</li>
+									<ul>
+										{% for desc_i in desc.itens %}
+											<li>{{ desc_i }}</li>
+										{% endfor %}
+									</ul>
+								{% endfor %}
+							</ul>
 						</div>
-						<div class="timeline-content">
-							<p class="heading">Março 2015</p>
-							<p>Engenheiro Aeronáutico - Airship do Brasil</p>
-						</div>
-					</div>
-					<!-- 2015 -->
-					<header class="timeline-header">
-						<span class="tag is-medium is-link">2015</span>
-					</header>
-					<!-- Aux. Técnico -->
-					<div class="timeline-item">
-						<div class="timeline-marker is-image is-32x32">
-							<img src="https://bulma.io/assets/images/placeholders/32x32.png">
-						</div>
-						<div class="timeline-content">
-							<p class="heading">Julho de 2014</p>
-							<p>Auxiliar Técnico - Airship do Brasil</p>
-						</div>
-					</div>
-					<!-- Estágio -->
-					<div class="timeline-item">
-						<div class="timeline-marker"></div>
-						<div class="timeline-content">
-							<p class="heading">Janeiro de 2014</p>
-							<p>Estagiário - Airship do Brasil</p>
-						</div>
-					</div>
-					<!-- 2014 -->
-					<div class="timeline-header">
-						<span class="tag is-medium is-link">2014</span>
+						{% endfor %}
 					</div>
 				</div>
+				{% endfor %}
 			</div>
 		</div>
 		<a href="https://drive.google.com/file/d/1xelAironBjxO4wdgCLHJPND28r1kXMMk/view" class="button is-link is-medium">

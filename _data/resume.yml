@@ -1,0 +1,64 @@
+---
+- company: Elemental Future GmbH
+  positions:
+    - name: Control Systems Architect
+      period: 11/2020 - 03/2022
+      description:
+        - title: "Estimação de características de dinâmica de voo de dirigível
+                  para guiar projeto preliminar. Implementação de controle de
+                  veículo usando empuxo vetorado;"
+        - title: "Implementação de simulação SITL (Software in the loop) com
+                  interface com softwares padrão da indústria (Paparazzi e
+                  Ardupilot);"
+        - title: "Desenvolvimento de software embarcado e de monitoramento
+                  para equipamento de ensaio de motor elétrico e hélice;"
+        - title: "Implementação de modelo de física de voo para aeronave
+                  mais leve que o ar no JSBSim com visualização em 3D no
+                  FlightGear;"
+        - title: "Teste e ajuste de sistema de controle de dirigível em
+                  ambiente real e simulado. Definição de procedimento de
+                  ensaio em voo. Implementação de sistema de telemetria para
+                  monitoramento de ensaios em voo;"
+        - title: "Projeto, definição e integração de sistema embarcado para
+                  controle de VANT (Veículo Aéreo Não Tripulado). Controle
+                  baseado em Pixhawk, GPS, sensor de pressão e fly-by-wire
+                  baseado em Arduino;"
+        - title: "Implementação de sistema de telemetria por Wi-Fi para um
+                  aeróstato cativo;"
+        - title: "Projeto e implementação de sistema de estabilização ativo
+                  para aeróstato cativo."
+- company: Airship do Brasil
+  positions:
+    - name: Engenheiro Aeronáutico
+      period: 03/2015 - 10/2019
+      description:
+        - title: "Peso e balanceamento, modelagem estrutural e aerodinâmica
+                  para projeto preliminar de dirigível de carga;"
+        - title: "Modelagem e simulação de dinâmica de voo com 6 graus de
+                  liberdade (MATLAB/Simulink);"
+        - title: "Projeto preliminar e modelagem de sistema para troca de
+                  cargas durante voo para dirigível de carga;"
+        - title: "Projeto e certificação de aeronave:"
+          itens:
+            - "Revisão de projeto de estrutura rebitada de estabilizador
+              para certificação;"
+            - "Otimização de peso de estais de cabo de aço. Atualização de
+              documentação para certificação;"
+            - "Reprojeto de conexões de sistema de controle de voo
+              (substituição de peça fabricada por peça de prateleira,
+              substanciação e certificação);"
+            - "Reprojeto de sistema de distribuição de combustível para
+              melhoria de atividades de manutenção;"
+            - "Substituição de roda de trem de pouso, substanciação e
+              certificação."
+        - title: "Escrita de procedimentos de produção, incluindo rebitagem de
+                  alumínio, solda de estruturas de aço e pintura. Adequação de
+                  restrições de produção e práticas aceitáveis."
+        - title: "Suporte técnico em caso de desvio de produção."
+    - name: Auxiliar técnico
+      period: 07/2014 - 03/2015
+      description:
+    - name: Estagiário
+      period: 01/2014 - 07/2014
+      description:
+...

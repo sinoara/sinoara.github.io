@@ -6,7 +6,7 @@ title: Guilherme Sinoara
 <section class="section" id="about">
 	<!-- Title -->
 	<div class="section-heading">
-		<h3 class="title is-2">Engenheiro Aeronáutico</h3>
+		<h3 class="title is-2">MBA em IA/Engenheiro Aeronáutico</h3>
 		<div class="container">
 			<p>Engenheiro Aeronáutico com mais de 7 anos de experiência na indústria
 			aeronáutica, incluindo projeto, certificação e produção.</p>
@@ -17,74 +17,24 @@ title: Guilherme Sinoara
 
 		<div class="column">
 			<!-- Skills -->
-			<div class="card">
-				<div class="card-content skills-content">
-					<h3 class="title is-4">Habilidades</h3>
-					<div class="content">
-						<!-- Skills tags -->
-						<div class="tags custom-tags are-light">
-							{% for skill in site.data.skills %}
-							<span class="tag">{{ skill.name }}</span>
-							{% endfor %}
-						</div>
-					</div>
-				</div>
-			</div>
+			{% include skills.html %}
 		</div>
 
 		<div class="column is-one-quarter">
 			<!-- Profile picture -->
-			<div class="card">
-				<div class="card-image">
-					<figure class="image is-1by1">
-						<img src="img/profile.jpeg" alt="Foto">
-					</figure>
-				</div>
-			</div>
+			{% include profile_pic.html %}
 		</div>
 
 		<div class="column">
 			<!-- Profile -->
-			<div class="card">
-				<div class="card-content">
-					<h3 class="title is-4">Contato</h3>
-					<div class="content">
-						<table class="table-profile">
-							<tr>
-								<th colspan="1"></th>
-								<th colspan="2"></th>
-							</tr>
-							<tr>
-								<td><span><i class="fa-solid fa-envelope"></i></span> 
-									<span>Email:</span>
-								</td>
-								<td><a href="mailto:gsinoara@gmail.com">gsinoara@gmail.com</a></td>
-							</tr>
-							<!--
-							<tr>
-								<td><span><i class="fa-brands fa-github"></i></span> 
-									<span>Github:</span>
-								</td>
-								<td><a href="https://github.com/sinoara/">github.com/sinoara</a></td>
-							</tr>
-							-->
-							<tr>
-								<td><span><i class="fa-brands fa-linkedin"></i></span> 
-									<span>Linkedin:</span>
-								</td>
-								<td><a href="https://www.linkedin.com/in/guilherme-sinoara/">linkedin.com/in/guilherme-sinoara</a></td>
-							</tr>
-						</table>
-					</div>
-				</div>
-			</div>
+			{% include contact.html %}
 		</div>
 
 </section>
 
 <br>
 
-<!-- Portfolio -->
+<!-- Projects -->
 <section class="section" id="projects">
 	<div class="section-heading">
 		<h3 class="title is-2">Projetos</h3>

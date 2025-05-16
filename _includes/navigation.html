@@ -3,14 +3,11 @@
 		<a href="/" class="level-item has-text-white has-text-weight-bold is-size-4" style="padding-left: 10px">
 			{{ page.title }}
 		</a>
-		<div class="navbar-burger burger" data-target="navbarExampleTransparentExample">
-			<span></span>
-			<span></span>
-			<span></span>
+		<div class="navbar-burger burger" data-target="navbarExample">
 		</div>
 	</div>
 
-	<div id="navbarExampleTransparentExample" class="navbar-menu">
+	<div id="navbar" class="navbar-menu">
 		<div class="navbar-end">
 			{% for item in site.data.navigation %}
 			<a class="navbar-item" href="{{ item.link }}">

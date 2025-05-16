@@ -1,0 +1,13 @@
+<div class="card">
+	<div class="card-content skills-content">
+		<h3 class="title is-4">Habilidades</h3>
+		<div class="content">
+			<!-- Skills tags -->
+			<div class="tags custom-tags are-light">
+				{% for skill in site.data.skills %}
+				<span class="tag">{{ skill.name }}</span>
+				{% endfor %}
+			</div>
+		</div>
+	</div>
+</div>

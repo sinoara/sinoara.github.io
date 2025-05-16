@@ -1,7 +1,8 @@
 - name: Python
+- name: Django
 - name: MATLAB/Simulink
 - name: Microsoft Office
-- name: C/C++
+- name: Machine learning
 - name: Git
 - name: Sistemas embarcados
 - name: Arduino
