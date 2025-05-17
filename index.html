@@ -38,51 +38,6 @@ title: Guilherme Sinoara
 {% include resume.html %}
 
 <!-- Projects -->
-<section class="section" id="projects">
-	<div class="section-heading">
-		<h3 class="title is-2">Projetos</h3>
-	</div>
-
-	<!-- XP5 -->
-	{% for project in site.data.projects %}
-	<section class="hero">
-		<div class="hero-body">
-			<div class="container">
-				<div class="columns  is-vcentered">
-					<div data-aos="fade-left" class="column
-												 is-10-mobile is-offset-1-mobile
-												 is-10-tablet is-offset-1-tablet
-												 is-4-desktop is-offset-1-desktop
-												 is-4-widescreen is-offset-1-widescreen
-												 is-4-fullhd is-offset-1-fullhd">
-						<figure class="image">
-							<img src="../img/{{ project.image }}">
-							<figcaption class="has-text-centered">
-								{{ project.caption }}
-							</figcaption>
-						</figure>
-					</div>
-					<div data-aos="fade-down" class="column
-												 is-10-mobile is-offset-1-mobile
-												 is-10-tablet is-offset-1-tablet
-												 is-5-desktop is-offset-1-desktop
-												 is-5-widescreen is-offset-1-widescreen
-												 is-5-fullhd is-offset-1-fullhd">
-						<h3 class="titled title is-3 mb-6">
-							{{ project.title }}
-						</h3>
-						<h4 class="subtitle is-4"> {{ project.company }} </h4>
-						<h5 class="subtitled is-5">
-							{{ project.subtitle }}
-						</h5>
-						<a href="{{ project.link }}" class="button is-large is-fullwidth is-link">
-								Leia mais
-						</a>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-	{% endfor %}
+{% include projects.html %}
 
 </section>
