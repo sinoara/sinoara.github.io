@@ -32,12 +32,6 @@
     - name: Engenheiro Aeronáutico
       period: 03/2015 - 10/2019
       description:
-        - title: "Peso e balanceamento, modelagem estrutural e aerodinâmica
-                  para projeto preliminar de dirigível de carga;"
-        - title: "Modelagem e simulação de dinâmica de voo com 6 graus de
-                  liberdade (MATLAB/Simulink);"
-        - title: "Projeto preliminar e modelagem de sistema para troca de
-                  cargas durante voo para dirigível de carga;"
         - title: "Projeto e certificação de aeronave:"
           itens:
             - "Revisão de projeto de estrutura rebitada de estabilizador
@@ -53,12 +47,19 @@
               certificação."
         - title: "Escrita de procedimentos de produção, incluindo rebitagem de
                   alumínio, solda de estruturas de aço e pintura. Adequação de
-                  restrições de produção e práticas aceitáveis."
-        - title: "Suporte técnico em caso de desvio de produção."
+                  restrições de produção e práticas aceitáveis;"
+        - title: "Suporte técnico em caso de desvio de produção;"
+        - title: "Integração de aeronave experimental"
     - name: Auxiliar técnico
       period: 07/2014 - 03/2015
       description:
+        - title: "Modelagem e simulação de dinâmica de voo com 6 graus de
+                  liberdade (MATLAB/Simulink);"
+        - title: "Projeto preliminar e modelagem de sistema para troca de
+                  cargas durante voo para dirigível de carga."
     - name: Estagiário
       period: 01/2014 - 07/2014
       description:
+        - title: "Peso e balanceamento, modelagem estrutural e aerodinâmica
+                  para projeto preliminar de dirigível de carga;"
 ...
