@@ -1,0 +1,12 @@
+---
+- company: MBA em IA e Big Data
+  positions:
+    - name: ICMC - USP
+      period: 06/2022 - 10/2023
+      description:
+- company: Engenharia Aeronáutica
+  positions:
+    - name: EESC - USP
+      period: 01/2010 - 12/2014
+      description:
+...

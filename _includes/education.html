@@ -1,0 +1,49 @@
+<section class="section" id="resume">
+	<div class="section-heading">
+		<div class="columns is-centered">
+			<div class="column is-half-desktop">
+				<h3 class="title is-2">Educação</h3>
+				{% for item in site.data.education %}
+				<div class="card">
+					<header class="card-header">
+						<p class="card-header-title title">
+							{{ item.company }}
+						</p>
+					</header>
+					<div class="card-content">
+						{% for position in item.positions %}
+						<div class="content has-text-justified">
+							<div class="columns">
+								<div class="column">
+									<p class="subtitle">{{ position.name }}</p>
+								</div>
+								<div class="column">
+									<p class="subtitle has-text-right">{{ position.period }}</p>
+								</div>
+								<hr />
+							</div>
+							<ul>
+								{% for desc in position.description %}
+									<li>{{ desc.title }}</li>
+									<ul>
+										{% for desc_i in desc.itens %}
+											<li>{{ desc_i }}</li>
+										{% endfor %}
+									</ul>
+								{% endfor %}
+							</ul>
+						</div>
+						{% endfor %}
+					</div>
+				</div>
+				{% endfor %}
+			</div>
+		</div>
+		<a href="https://drive.google.com/file/d/1xelAironBjxO4wdgCLHJPND28r1kXMMk/view" class="button is-link is-medium">
+			<span class="icon">
+				<i class="fas fa-file-alt"></i>
+			</span>
+			<span>Download PDF</span>
+		</a>
+	</div>
+</section>
