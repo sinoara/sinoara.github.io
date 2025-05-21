@@ -1,9 +1,9 @@
 - name: Sobre
   link: "/#about"
   icon: fas fa-info
-- name: Projetos
-  link: "/#projects"
-  icon: fas fa-th-list
 - name: Currículo
   link: "/#resume"
   icon: fas fa-file-download
+- name: Projetos
+  link: "/#projects"
+  icon: fas fa-th-list
