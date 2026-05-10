@@ -1,22 +1,17 @@
-<nav class="navbar is-link is-fixed-top">
-	<div class="navbar-brand">
-		<a href="/" class="level-item has-text-white has-text-weight-bold is-size-4" style="padding-left: 10px">
-			{{ page.title }}
-		</a>
-		<div class="navbar-burger burger" data-target="navbarExample">
-		</div>
-	</div>
-
-	<div id="navbar" class="navbar-menu">
-		<div class="navbar-end">
-			{% for item in site.data.navigation %}
-			<a class="navbar-item" href="{{ item.link }}">
-				<span class="icon">
-					<i class="{{ item.icon }}"></i>
-				</span>
-				<span>{{ item.name }}</span>
-			</a>
-			{% endfor %}
-		</div>
-	</div>
-</nav>
+<div id="navbar-app">
+	<v-app>
+		<v-app-bar>
+			<template v-slot:prepend>
+				<v-app-bar-nav-icon></v-app-bar-nav-icon>
+			</template>
+			<v-app-bar-title>Application Bar</v-app-bar-title>
+		</v-app-bar>
+	</v-app>
+</div>
+<script type="module">
+const { createApp } = Vue
+const { createVuetify } = Vuetify
+const vuetify = createVuetify()
+const app = createApp()
+app.use(vuetify).mount('#navbar-app')
+</script>
