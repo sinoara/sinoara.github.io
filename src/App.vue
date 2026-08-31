@@ -28,6 +28,12 @@
                                     <v-card title="Guilherme Sinoara" subtitle="Engenheiro Aeronáutico">
                                     </v-card>
                                 </v-list-item>
+                                <v-list-item>
+                                    <div class="d-flex w-50">
+                                        <v-chip class="ml-1 mb-1" density="compact" v-for="skill in skills">{{ skill
+                                        }}</v-chip>
+                                    </div>
+                                </v-list-item>
 
                                 <v-list-item title="Experiência profissional" link></v-list-item>
                                 <v-list-item title="Educação" link></v-list-item>
@@ -36,7 +42,7 @@
 
                                 <v-divider class="my-2"></v-divider>
 
-                                <v-list-item color="grey-lighten-4" title="CV (pdf)" link></v-list-item>
+                                <v-list-item color="grey-lighten-4" title="Currículo (pdf)" link></v-list-item>
                             </v-list>
                         </v-sheet>
                     </v-col>
@@ -44,7 +50,6 @@
                     <v-col>
                         <v-sheet class="overflow-y-auto" min-height="95vh" rounded="lg">
                             <router-view />
-                            <!--  -->
                         </v-sheet>
                     </v-col>
                 </v-row>
@@ -54,11 +59,19 @@
 </template>
 
 <script setup lang="ts">
-const links = [
-    'Dashboard',
-    'Messages',
-    'Profile',
-    'Updates',
+const skills: string[] = [
+    'Python',
+    'Django',
+    'Git',
+    'Dart(Flutter)',
+    'PyTorch',
+    'Machine Learning',
+    'Linux',
+    'Pacote Office',
+    'MATLAB',
+    'Simulink',
+    'Arduino',
+    'Latex',
 ]
 </script>
 
