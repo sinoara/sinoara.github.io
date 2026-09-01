@@ -22,8 +22,6 @@
                                     </v-avatar>
                                 </v-list-item>
 
-                                <v-divider class="my-2"></v-divider>
-
                                 <v-list-item>
                                     <v-card title="Guilherme Sinoara" subtitle="Engenheiro Aeronáutico">
                                     </v-card>
@@ -34,6 +32,8 @@
                                         }}</v-chip>
                                     </div>
                                 </v-list-item>
+
+                                <v-divider class="my-2"></v-divider>
 
                                 <v-list-item title="Experiência profissional" link></v-list-item>
                                 <v-list-item title="Educação" link></v-list-item>

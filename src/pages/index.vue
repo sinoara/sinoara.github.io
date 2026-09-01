@@ -1,13 +1,30 @@
 <template>
-    <div>
+    <div class="my-8 mx-32">
         <div class="text-4xl text-center">Experiência Profissional</div>
         <v-timeline side="end" align="start">
             <v-timeline-item v-for="job in jobs">
                 <template v-slot:opposite>{{ job['period'] }}</template>
-                <v-card :title="job['position']" :subtitle="job['company']">
+                <v-card class="bg-neutral-700" :title="job['position']" :subtitle="job['company']">
                     <v-card-text>
                         <ul>
                             <li v-for="item in job['description']">
+                                {{ item }}
+                            </li>
+                        </ul>
+                    </v-card-text>
+                </v-card>
+            </v-timeline-item>
+        </v-timeline>
+    </div>
+    <div class="my-8 mx-32">
+        <div class="text-4xl text-center">Formação Acadêmica</div>
+        <v-timeline side="end" align="start">
+            <v-timeline-item v-for="edu in education_list">
+                <template v-slot:opposite>{{ edu['period'] }}</template>
+                <v-card :title="edu['degree']" :subtitle="edu['school']">
+                    <v-card-text>
+                        <ul>
+                            <li v-for="item in edu['description']">
                                 {{ item }}
                             </li>
                         </ul>
@@ -22,7 +39,7 @@
 let jobs: any[] = [
     {
         "position": "Técnico em Automação",
-        "company": "RB Automação",
+        "company": "RB Automação - São Carlos, SP",
         "period": "10/2025 - atualmente",
         "description": [
             "Programação de CLP e IHM",
@@ -35,7 +52,7 @@ let jobs: any[] = [
     },
     {
         "position": "Professor Particular",
-        "company": null,
+        "company": "São Carlos, SP",
         "period": "03/2024 - 10/2025",
         "description": [
             "Matemática",
@@ -56,7 +73,7 @@ let jobs: any[] = [
     },
     {
         "position": "Engenheiro Aeronáutico",
-        "company": "Airship do Brasil",
+        "company": "Airship do Brasil - São Carlos, SP",
         "period": "01/2014 - 14/2019",
         "description": [
             "Desenvolvimento de modelos de dinâmica de voo, estrutural e aerodinâmico para projeto de aeronaves em MATLAB e Simulink",
@@ -68,4 +85,20 @@ let jobs: any[] = [
         ],
     },
 ]
+
+let education_list: any[] = [
+    {
+        "degree": "MBA em IA e Big Data",
+        "school": "Universidade de São Paulo",
+        "period": "07/2022 - 10/2023",
+        "description": null,
+    },
+    {
+        "degree": "Engenharia Aeronáutica",
+        "school": "Universidade de São Paulo",
+        "period": "2010 - 2014",
+        "description": null,
+    },
+]
+
 </script>
